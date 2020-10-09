@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Image\ 9.png);
+   
+}
+
+#bg{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#nav{
+    margin-top: 30px;
+    width: 100%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#links{
+    margin-right:300px ;
+    font-family:'Red Rose';
+}
+#links .links{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+}
+
+#links #home{
+    text-align: center;
+    margin-top: 10%;
+    width: 90px;
+    height: 30px;
+    padding-top: 2px;
+    background-color: red;
+}
