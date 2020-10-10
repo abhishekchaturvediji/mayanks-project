@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family:'Red Rose';
     overflow: hidden;
 }
 
@@ -33,7 +34,6 @@ html,body{
 }
 #links{
     margin-right:500px ;
-    font-family:'Red Rose';
 }
 #links .links{
     display: inline-block;
@@ -52,13 +52,124 @@ html,body{
     padding-top: 6px;
     background-color: red;
 }
+
+#content{
+    width: 100%;
+    height: calc(100% - 220px);
+    display: flex;
+}
+
+
+#content #icons{
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    left: 210px;
+    
+}
+
+
+#content .icons{
+    margin-top: 5px;
+    margin-left: 150px;
+}
+
+#content a img{
+    width: 25px;
+    height: 25px;
+}
+
 #right{
     width: 70%;
     height: 90%;
 }
 #wright{
-    width: 65%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     margin-left:70px ;
-    background-color: #dadada;
+    background-color: #3A3535;
+    position: relative;
+}
+
+#wright #textinr{
+    color: white;
+    font-weight: 500;
+    padding-left: 50px;
+    padding-top: 80px;
+    line-height: 35px;
+}
+
+#wright #rightimg{
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    bottom: 10px;
+    width: 332px;
+
+}
+
+#wright #hr1{
+    position: absolute;
+    top: 150px;
+    left: 170px;
+    width: 400px;
+    height: 1px;
+    background-color: white;
+
+}
+
+
+#wright #hr2{
+    position: absolute;
+    top: 240px;
+    right:365px;
+    width: 320px;
+    height: 1px;
+    background-color: white;
+    transform: rotate(90deg);
+
+}
+
+#mayankwhite,#blue{
+    position: absolute;
+    top: 160px;
+    left: 235px;
+    width: 230px;
+}
+#left{
+    width:30%;
+    height: 90%;
+    margin-left: 60px;
+}
+
+#left #img3{
+    position: absolute;
+    top: 0px;
+    width: 430px;
+    height: 100%;
+    z-index: 1;
+
+}
+
+#left #con{
+    display: flex;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: 96%;
+    left: 0%;
+    z-index: 123;
+    
+}
+#left #hr3{
+    transform: rotate(90deg);
+    width: 50px;
+    height: 2px;
+    background-color: red;
+    z-index: 99;
+}
+
+#left #name{
+    color: white;
+    z-index: 999;
 }
