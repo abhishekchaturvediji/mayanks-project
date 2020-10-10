@@ -26,14 +26,19 @@ html,body{
     align-items: center;
     justify-content: space-between;
 }
+
+#nav>img{
+    margin-left:70px ;
+    width: 310px;
+}
 #links{
-    margin-right:300px ;
+    margin-right:500px ;
     font-family:'Red Rose';
 }
 #links .links{
     display: inline-block;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
     text-decoration: none;
     color: white;
     margin-right: 40px;
@@ -42,8 +47,18 @@ html,body{
 #links #home{
     text-align: center;
     margin-top: 10%;
-    width: 90px;
+    width: 80px;
     height: 30px;
-    padding-top: 2px;
+    padding-top: 6px;
     background-color: red;
+}
+#right{
+    width: 70%;
+    height: 90%;
+}
+#wright{
+    width: 65%;
+    height: 70%;
+    margin-left:70px ;
+    background-color: #dadada;
 }
