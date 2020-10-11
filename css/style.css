@@ -19,6 +19,7 @@ html,body{
     
 }
 
+
 #nav{
     margin-top: 30px;
     width: 100%;
@@ -53,10 +54,57 @@ html,body{
     background-color: red;
 }
 
+
+@media only screen and (max-width: 992px){
+    #nav{
+        margin-top: 20px;
+        width: 100%;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #nav>img{
+        margin-left:50px ;
+        width: 250px;
+    }
+    #links{
+        margin-right:300px ;
+    }
+    #links .links{
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+        margin-right: 20px;
+    }
+
+    #links #home{
+        text-align: center;
+        margin-top: 5%;
+        width: 50px;
+        height: 20px;
+        padding-top: 4px;
+        background-color: red;
+    }
+}
+
+
+
 #content{
     width: 100%;
     height: calc(100% - 220px);
     display: flex;
+}
+
+@media only screen and (max-width: 992px){
+    #content{
+        width: 100%;
+        height: calc(100% - 150px);
+        display: flex;
+    }
 }
 
 
@@ -77,6 +125,30 @@ html,body{
 #content a img{
     width: 25px;
     height: 25px;
+}
+
+
+
+@media only screen and (max-width: 992px){
+   
+    #content #icons{
+        display: flex;
+        position: absolute;
+        bottom: 5px;
+        left: 180px;
+        
+    }
+
+
+    #content .icons{
+        margin-top: 3px;
+        margin-left: 120px;
+    }
+
+    #content a img{
+        width: 15px;
+        height: 15px;
+    } 
 }
 
 #right{
@@ -136,6 +208,58 @@ html,body{
     left: 235px;
     width: 230px;
 }
+
+
+@media only screen and (max-width: 992px){
+    #wright {
+        width: 100%;
+        height: 100%;
+        margin-left: 50px;
+        background-color: #3A3535;
+        position: relative;
+    }
+    #wright #textinr {
+        color: white;
+        font-weight: 500;
+        padding-left: 40px;
+        padding-top: 50px;
+        line-height: 24px;
+        font-size: 18px;
+    }
+    #wright #rightimg {
+        position: absolute;
+        top: 20px;
+        right: 60px;
+        bottom: 10px;
+        width: 240px;
+        height: 90%;
+    }
+    #wright #hr1 {
+        position: absolute;
+        top: 100px;
+        left: 168px;
+        width: 234px;
+        height: 1px;
+        background-color: white;
+    }
+    #wright #hr2 {
+        position: absolute;
+        top: 185px;
+        right: 163px;
+        width: 295px;
+        height: 1px;
+        background-color: white;
+        transform: rotate(90deg);
+    }
+    #mayankwhite, #blue {
+        position: absolute;
+        top: 109px;
+        left: 106px;
+        width: 226px;
+    }
+}
+
+
 #left{
     width:30%;
     height: 90%;
@@ -172,4 +296,170 @@ html,body{
 #left #name{
     color: white;
     z-index: 999;
+}
+
+
+
+@media only screen and (max-width: 992px){
+    #left {
+        width: 30%;
+        height: 90%;
+        margin-left: 30px;
+    }
+    #left #img3 {
+        position: absolute;
+        top: 0px;
+        width: 288px;
+        height: 100%;
+        z-index: 1;
+    }
+    #left #con {
+        display: flex;
+        width: 188px;
+        height: 100px;
+        position: relative;
+        top: 96%;
+        left: 0%;
+        z-index: 123;
+    }
+}
+
+
+@media (min-width:200px) and (max-width: 720px){
+    #nav {
+        margin-top: -20px;
+        width: 100%;
+        height: 108px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #nav>img {
+        margin-left: 20px;
+        width: 120px;
+    }
+    #links {
+        margin-right: -10px;
+    }
+    #links #home {
+        text-align: center;
+        margin-top: 0%;
+        width: 35px;
+        height: 17px;
+        padding-top: 4px;
+        background-color: red;
+    }
+
+    #links .links{
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+        margin-right: 20px;
+    }
+
+    #content {
+        width: 100%;
+        height: calc(100% - 88px);
+        display: block;
+    }
+
+    #content #icons {
+        display: flex;
+        position: absolute;
+        bottom: 200px;
+        left: -34px;
+        z-index: 550;
+    }
+
+    #content .icons {
+        margin-top: 3px;
+        margin-left: 75px;
+    }
+    #right {
+        width: 100%;
+        height: 70%;
+    }
+
+    #wright {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        background-color: #3A3535;
+        position: relative;
+    }
+
+    #wright #textinr {
+        color: white;
+        font-weight: 500;
+        padding-left: 15px;
+        padding-top: 53px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    #wright #rightimg {
+        position: absolute;
+        top: 13px;
+        right: 4px;
+        bottom: 10px;
+        width: 206px;
+        height: 93%;
+    }
+    #wright #hr1 {
+        position: absolute;
+        top: 92px;
+        left: 76px;
+        width: 202px;
+        height: 1px;
+        background-color: white;
+    }
+
+    #wright #hr2 {
+        position: absolute;
+        top: 191px;
+        right: 109px;
+        width: 271px;
+        height: 1px;
+        background-color: white;
+        transform: rotate(90deg);
+    }
+
+    #mayankwhite, #blue {
+        position: absolute;
+        top: 104px;
+        left: 19px;
+        width: 226px;
+    }
+
+    #left {
+        margin: 0px;
+        width: 100%;
+        height: 30%;
+    }
+
+    #left #img3 {
+        /* position: absolute; */
+        top: 40%;
+        left: 163px;
+        /* width: 100%; */
+        height: 100%%;
+        /* z-index: 1; */
+        /* transition: rotat; */
+        transform: rotate(270deg);
+        height: 91%;
+        width: 35%;
+        /* bottom: 73%; */
+    }
+    #left #con {
+        display: flex;
+        width: 188px;
+        height: 100px;
+        position: relative;
+        top: 2%;
+        left: 0%;
+        z-index: 123;
+    }
+
+
 }
