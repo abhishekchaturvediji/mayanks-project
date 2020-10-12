@@ -3,7 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family:'Red Rose';
-    overflow: hidden;
+    
 }
 
 html,body{
@@ -19,447 +19,162 @@ html,body{
     
 }
 
-
-#nav{
-    margin-top: 30px;
+#nav {
+    margin-top: 0px;
     width: 100%;
-    height: 190px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+#nav>img {
+    margin-left: 20px;
+    width: 225px;
+}
 
-#nav>img{
-    margin-left:70px ;
-    width: 310px;
+#links {
+    margin-right: 0px;
 }
-#links{
-    margin-right:500px ;
+#links #home {
+    text-align: center;
+    margin-top: 0%;
+    width: 50px;
+    height: 20px;
+    padding-top: 3px;
+    background-color: red;
 }
-#links .links{
+
+#links .links {
     display: inline-block;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 800;
     text-decoration: none;
     color: white;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
-#links #home{
-    text-align: center;
-    margin-top: 10%;
-    width: 80px;
-    height: 30px;
-    padding-top: 6px;
-    background-color: red;
-}
-
-
-@media only screen and (max-width: 992px){
-    #nav{
-        margin-top: 20px;
-        width: 100%;
-        height: 130px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    #nav>img{
-        margin-left:50px ;
-        width: 250px;
-    }
-    #links{
-        margin-right:300px ;
-    }
-    #links .links{
-        display: inline-block;
-        font-size: 10px;
-        font-weight: 400;
-        text-decoration: none;
-        color: white;
-        margin-right: 20px;
-    }
-
-    #links #home{
-        text-align: center;
-        margin-top: 5%;
-        width: 50px;
-        height: 20px;
-        padding-top: 4px;
-        background-color: red;
-    }
-}
-
-
-
-#content{
+#content {
     width: 100%;
-    height: calc(100% - 220px);
-    display: flex;
+    height: calc(100% - 100px);
 }
 
-@media only screen and (max-width: 992px){
-    #content{
-        width: 100%;
-        height: calc(100% - 150px);
-        display: flex;
-    }
-}
-
-
-#content #icons{
+#content #icons {
     display: flex;
     position: absolute;
-    bottom: 5px;
-    left: 210px;
-    
+    top: 776px;
+    left: 20px;
+    z-index: 550;
+}
+
+#content .icons {
+    margin-top: 3px;
+    margin-left: 75px;
 }
 
 
-#content .icons{
-    margin-top: 5px;
-    margin-left: 150px;
+#right {
+    width: 100%;
+    height: 65%;
 }
-
-#content a img{
-    width: 25px;
-    height: 25px;
-}
-
-
-
-@media only screen and (max-width: 992px){
-   
-    #content #icons{
-        display: flex;
-        position: absolute;
-        bottom: 5px;
-        left: 180px;
-        
-    }
-
-
-    #content .icons{
-        margin-top: 3px;
-        margin-left: 120px;
-    }
-
-    #content a img{
-        width: 15px;
-        height: 15px;
-    } 
-}
-
-#right{
-    width: 70%;
-    height: 90%;
-}
-#wright{
+#wright {
     width: 100%;
     height: 100%;
-    margin-left:70px ;
     background-color: #3A3535;
     position: relative;
+    /* margin-right: 121px; */
+    margin-left: 20px;
 }
 
-#wright #textinr{
+
+#wright #textinr {
     color: white;
     font-weight: 500;
-    padding-left: 50px;
-    padding-top: 80px;
-    line-height: 35px;
+    padding-left: 27px;
+    padding-top: 130px;
+    line-height: 33px;
+    font-size: 21px;
 }
 
-#wright #rightimg{
+#wright #rightimg {
     position: absolute;
-    top: 10px;
-    right: 80px;
-    bottom: 10px;
-    width: 332px;
-
+    top: 36px;
+    right: 13px;
+    width: 300px;
+    height: 90%;
 }
-
-#wright #hr1{
+#wright #hr1 {
     position: absolute;
-    top: 150px;
-    left: 170px;
-    width: 400px;
+    top: 200px;
+    left: 76px;
+    width: 287px;
     height: 1px;
     background-color: white;
-
 }
-
-
-#wright #hr2{
+#wright #hr2 {
     position: absolute;
-    top: 240px;
-    right:365px;
-    width: 320px;
+    top: 334px;
+    right: 220px;
+    width: 271px;
     height: 1px;
     background-color: white;
     transform: rotate(90deg);
-
 }
 
-#mayankwhite,#blue{
+#mayankwhite, #blue {
     position: absolute;
-    top: 160px;
-    left: 235px;
-    width: 230px;
+    top: 223px;
+    left: 93px;
+    width: 226px;
 }
 
-
-@media only screen and (max-width: 992px){
-    #wright {
-        width: 100%;
-        height: 100%;
-        margin-left: 50px;
-        background-color: #3A3535;
-        position: relative;
-    }
-    #wright #textinr {
-        color: white;
-        font-weight: 500;
-        padding-left: 40px;
-        padding-top: 50px;
-        line-height: 24px;
-        font-size: 18px;
-    }
-    #wright #rightimg {
-        position: absolute;
-        top: 20px;
-        right: 60px;
-        bottom: 10px;
-        width: 240px;
-        height: 90%;
-    }
-    #wright #hr1 {
-        position: absolute;
-        top: 100px;
-        left: 168px;
-        width: 234px;
-        height: 1px;
-        background-color: white;
-    }
-    #wright #hr2 {
-        position: absolute;
-        top: 185px;
-        right: 163px;
-        width: 295px;
-        height: 1px;
-        background-color: white;
-        transform: rotate(90deg);
-    }
-    #mayankwhite, #blue {
-        position: absolute;
-        top: 109px;
-        left: 106px;
-        width: 226px;
-    }
+#wright #btn {
+    position: relative;
+    top: 37%;
+    left: 19%;
+    width: 142px;
+    height: 28px;
+    border: none;
+    color: black;
+    background-color: #656B9C;
+    border-radius: 20px;
+}
+#left {
+    /* margin: 0px; */
+    width: 100%;
+    height: 35%;
 }
 
-
-#left{
-    width:30%;
-    height: 90%;
-    margin-left: 60px;
-}
-
-#left #img3{
+#left #img3 {
+    transform: rotate(270deg);
+    height: 56%;
+    width: 58%;
     position: absolute;
-    top: 0px;
-    width: 430px;
-    height: 100%;
-    z-index: 1;
-
+    top: 56%;
+    left: 21%;
 }
-
-#left #con{
+#left #con {
     display: flex;
-    width: 200px;
+    width: 270px;
     height: 100px;
     position: relative;
-    top: 96%;
-    left: 0%;
+    top: 77%;
+    left: 1%;
     z-index: 123;
-    
-}
-#left #hr3{
-    transform: rotate(90deg);
-    width: 50px;
-    height: 2px;
-    background-color: red;
-    z-index: 99;
+    justify-content: center;
+    align-items: center;
 }
 
-#left #name{
+#left #con #hr3{
+    width: 5px;
+    height: 50px;
+    background: red;
+    margin-right: 17px;
+}
+
+#left #con #name{
+    font-size: 25px;
+    font-weight: 600;
     color: white;
-    z-index: 999;
 }
 
 
-
-@media only screen and (max-width: 992px){
-    #left {
-        width: 30%;
-        height: 90%;
-        margin-left: 30px;
-    }
-    #left #img3 {
-        position: absolute;
-        top: 0px;
-        width: 288px;
-        height: 100%;
-        z-index: 1;
-    }
-    #left #con {
-        display: flex;
-        width: 188px;
-        height: 100px;
-        position: relative;
-        top: 96%;
-        left: 0%;
-        z-index: 123;
-    }
-}
-
-
-@media (min-width:200px) and (max-width: 720px){
-    #nav {
-        margin-top: -20px;
-        width: 100%;
-        height: 108px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    #nav>img {
-        margin-left: 20px;
-        width: 120px;
-    }
-    #links {
-        margin-right: -10px;
-    }
-    #links #home {
-        text-align: center;
-        margin-top: 0%;
-        width: 35px;
-        height: 17px;
-        padding-top: 4px;
-        background-color: red;
-    }
-
-    #links .links{
-        display: inline-block;
-        font-size: 10px;
-        font-weight: 400;
-        text-decoration: none;
-        color: white;
-        margin-right: 20px;
-    }
-
-    #content {
-        width: 100%;
-        height: calc(100% - 88px);
-        display: block;
-    }
-
-    #content #icons {
-        display: flex;
-        position: absolute;
-        bottom: 200px;
-        left: -34px;
-        z-index: 550;
-    }
-
-    #content .icons {
-        margin-top: 3px;
-        margin-left: 75px;
-    }
-    #right {
-        width: 100%;
-        height: 70%;
-    }
-
-    #wright {
-        width: 100%;
-        height: 100%;
-        margin-left: 0px;
-        background-color: #3A3535;
-        position: relative;
-    }
-
-    #wright #textinr {
-        color: white;
-        font-weight: 500;
-        padding-left: 15px;
-        padding-top: 53px;
-        line-height: 20px;
-        font-size: 14px;
-    }
-    #wright #rightimg {
-        position: absolute;
-        top: 13px;
-        right: 4px;
-        bottom: 10px;
-        width: 206px;
-        height: 93%;
-    }
-    #wright #hr1 {
-        position: absolute;
-        top: 92px;
-        left: 76px;
-        width: 202px;
-        height: 1px;
-        background-color: white;
-    }
-
-    #wright #hr2 {
-        position: absolute;
-        top: 191px;
-        right: 109px;
-        width: 271px;
-        height: 1px;
-        background-color: white;
-        transform: rotate(90deg);
-    }
-
-    #mayankwhite, #blue {
-        position: absolute;
-        top: 104px;
-        left: 19px;
-        width: 226px;
-    }
-
-    #left {
-        margin: 0px;
-        width: 100%;
-        height: 30%;
-    }
-
-    #left #img3 {
-        /* position: absolute; */
-        top: 40%;
-        left: 163px;
-        /* width: 100%; */
-        height: 100%%;
-        /* z-index: 1; */
-        /* transition: rotat; */
-        transform: rotate(270deg);
-        height: 91%;
-        width: 35%;
-        /* bottom: 73%; */
-    }
-    #left #con {
-        display: flex;
-        width: 188px;
-        height: 100px;
-        position: relative;
-        top: 2%;
-        left: 0%;
-        z-index: 123;
-    }
-
-
-}
