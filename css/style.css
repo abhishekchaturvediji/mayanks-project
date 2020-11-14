@@ -3,7 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family:'Red Rose';
-    
+    overflow: hidden;
 }
 
 html,body{
@@ -16,149 +16,128 @@ html,body{
 #bg{
     width: 100%;
     height: 100%;
-    
+    display: flex;
+}
+#left{
+    width: 75%;
+    height: 100%;
+
 }
 
-#nav {
-    
+#nav{
+
+    margin-top: 30px;
     width: 100%;
-    height: 20%;
+    height: 190px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#nav>img {
-    margin-left: 20px;
-    width: 332px;
+
+#nav>img{
+    margin-left:70px ;
+    width: 310px;
 }
 
-#links {
-    margin-right: 0px;
+#link-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 40%;
 }
-#links #home {
-    text-align: center;
-    margin-top: 0%;
-    width: 50px;
-    height: 20px;
-    padding-top: 3px;
+.links{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-right: 40px;
+}
+
+#redbg{
     background-color: red;
 }
 
-
-
-#links .links {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 800;
-    text-decoration: none;
-    color: white;
-    margin-right: 20px;
-}
-#content {
-    width: 100%;
-    height: 80%;
-}
-
-
-
-#right {
+#link-wrap>a:nth-child(1){
     display: flex;
-    width: 100%;
-    height: 70%;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 25px;
 }
-#wright {
-    padding: 20px 40px;
-    width: 55%;
+
+
+#right{
+    background-color:transparent;
+
+    width: 25%;
     height: 100%;
-    background-color: #3A3535;
-    position: relative;
-    margin-left: 20px;
-}
-
-
-#wright #textinr {
-    color: white;
-    font-weight: 500;
-    padding: 10px 5px;
-    line-height: 30px;
-    font-size: 17px;
-    width: 100%;
-}
-#box{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: calc(100% - 79px);
-    position: relative;
-}
-
-
-
-#mayankwhite {
-    padding: 5px;
-}
-
-#icons {
-    display: flex;
-    z-index: 550;
-    justify-content: space-around;
-}
-
-
-
-#wright #btn {
-    margin-left: 80px;
-    width: 90px;
-    height: 22px;
-    border: none;
-    color: black;
-    background-color: #656B9C;
-    border-radius: 14px;
-    font-size: 10px;
-}
-
-#wright2 {
-    padding: 20px 10px;
-    width: 50%;
-    height: 100%;
-    background-color: #3A3535;
-    
-}
-#left {
-    width: 100%;
-    height: 30%;
-    background-image: url(../images/Image\ 19.png);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-
-#left #con {
-    display: flex;
-    width: 270px;
-    height: 100px;
-    position: absolute;
-    top: 74%;
-    left: 27px;
-    z-index: 123;
     justify-content: center;
     align-items: center;
 }
 
-#left #con #hr3{
-    width: 5px;
-    height: 50px;
-    background: red;
-    margin-right: 17px;
+#photo{
+    width: 90%;
+    height: 90%;
+    background-image: url("../images/Mask\ Group\ 17.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120% 100%;
+    border-radius: 25px 0px 0px 25px;
+
 }
 
-#left #con #name{
-    font-size: 25px;
-    font-weight: 600;
+#main{
+    padding:20px 0px 50px 70px;
+    width: calc(100% - 40px);
+    height: 450px;
     color: white;
+    display: flex; 
+    background-color: #3A3535;
+}
+
+.main-in{
+    width: 50%;
+    height: 100%;
+    
 }
 
 
+
+#main1{
+    font-size: 20px;
+    line-height: 30px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+
+}
+
+#main1>img{
+    margin-top:-10px ;
+}
+
+#main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+#img{
+    width: 85%;
+    height: 85%;
+    background-image:url("../images/Image\ 14.png") ;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+
+#icons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:50px;
+    width:100%;
+
+}
