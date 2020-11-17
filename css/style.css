@@ -270,7 +270,6 @@ html,body{
     justify-content: space-around;
     width: 80%;
     height: 100%;
-    border: 1px solid blue;
 }
 
 
@@ -278,7 +277,6 @@ html,body{
     width: 25%;
     height: 170px;
     padding: 5px;
-    border: 1px solid green;
 }
 
 
@@ -301,7 +299,6 @@ html,body{
     flex-wrap: wrap;
     width: 85%;
     height: 100%;
-    border: 1px solid blue;
 }
 
 
@@ -317,7 +314,6 @@ html,body{
     width: 33%;
     height: 170px;
     padding: 5px;
-    border: 1px solid green;
 }
 
 }
@@ -341,7 +337,6 @@ html,body{
     flex-wrap: wrap;
     width: 90%;
     height: 100%;
-    border: 1px solid blue;
 }
 
 
@@ -357,10 +352,201 @@ html,body{
     width: 50%;
     height: 170px;
     padding: 5px;
-    border: 1px solid green;
 }
 }
     
+
+
+/* about page */
+
+
+#about-container{
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+}
+
+#about-left{
+    width: 25%;
+    height: 100%;
+}
+
+
+#about-right{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    list-style: 2px;
+    word-spacing: 5px;
+}
+
+.about-para{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 767px){
+    #gallery-nav{
+        overflow: hidden;
+    }
+    #about-container{
+        width: 100%;
+        height: 150%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #about-left{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #about-right{
+        overflow: hidden;
+        width: 100%;
+        /* height: 75%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-para{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        align-items: center;
+        color: white;
+        margin-top: 20px;
+        width: 100%;
+        height: 250px;
+    }
+} 
+
+
+/* about page-ended */
+
+
+/* contact-started */
+#contact-container{
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+
+}
+
+#container-left{
+    width: 35%;
+    height: 100%;
+}
+
+#contact-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px;
+    padding-top: 200px;
+    width: 65%;
+    height: 100%;
+    
+
+}
+
+#reright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+
+}
+
+.contact-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 767px){
+    #contact-container{
+        overflow: hidden;
+        width: 100%;
+        height: calc(100% - 80px);
+        display: flex;
+        flex-direction: column;
+        border: 1px solid red;
+        overflow: hidden;
+    
+    }
+
+    #container-left{
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 100%;
+        height: 30%;
+        border: 1px solid green;
+    }
+    
+    #contact-right{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        padding-top: 20px;
+        width: 100%;
+        height: 60%;
+        border: 10px solid yellowgreen;
+        
+    
+    }
+
+    
+    .contact-content{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        border: 5px solid gold;
+    }
+}
+
 
 
 
